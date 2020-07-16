@@ -1,8 +1,8 @@
 import React from 'react';
-import './css/App.css';
 // Call component
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Header from "./components/master/Header"
+import Footer from "./components/master/Footer"
+import Content from "./components/Content"
 
 const App = () => {
   return (
@@ -11,6 +11,12 @@ const App = () => {
         <Header />
       </header>
       
+      <section className="text-gray-700 font-medium">
+        <div className="container px-5 py-24 mx-auto">
+          <Content />
+        </div>
+      </section>
+
       <footer className="text-gray-700 font-mono bg-gray-400">
         <Footer />
       </footer>

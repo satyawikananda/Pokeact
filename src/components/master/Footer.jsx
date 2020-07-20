@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {Fragment} from "react"
+import React from "react"
 import logo from "../../logo.svg"
 
 const Footer = () => {
     return (
-        <Fragment>
+        <>
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <a className="flex font-normal items-center md:justify-start justify-center text-gray-900">
                     <img src={logo} alt="Logo" className="w-10 h-10 text-white bg-indigo-500 rounded-full"/>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </a>
                 </span>
             </div>
-        </Fragment>
+        </>
     )
 }
 

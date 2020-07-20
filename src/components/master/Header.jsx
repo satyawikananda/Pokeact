@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {Fragment} from "react"
+import React from "react"
 import logo from "../../logo.svg"
 
 const Header = () =>  {
     return(
-        <Fragment>
+        <>
             <div className="container mx-auto flex p-5 flex-col md:flex-row justify-center items-center">
                 <a className="flex lg:w-1/4 title-font font-normal items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
                     <img src={logo} alt="Logo" className="w-10 h-10 text-white bg-indigo-500 rounded-full"/>
@@ -18,7 +18,7 @@ const Header = () =>  {
                     </button>
                 </div>
             </div>
-        </Fragment>
+        </>
     );
 }
 

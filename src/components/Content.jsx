@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from "react"
-import logo from "../assets/img/pokeact.png"
+import logo from "../assets/img/pokeact1.png"
 import axios from "axios"
 
 const Content = () => {
@@ -11,7 +11,7 @@ const Content = () => {
     function capitalizeWord(word) {
         return word[0].toUpperCase() + word.slice(1).toLowerCase()
     }
-    
+
     useEffect(() => {
         const fetchData = async (id) => {
             isLoading(true)
@@ -26,13 +26,12 @@ const Content = () => {
         for (let i = 1; i <= countPokemon; i++) {
             fetchData(i)
         }
-
     }, []);
 
     return(
         <Fragment>
             <div className="flex flex-col text-center w-full mb-20">
-                <img src={logo} alt="Logo" className="w-24 h-24 mx-auto text-white bg-indigo-500 rounded-full App-logo"/>
+                <img src={logo} alt="Logo" className="w-24 h-24 mx-auto text-white bg-gray-300 rounded-full App-logo"/>
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Find Pokemon in Pokeact</h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">A Pokemon list made with library React JS</p>
             </div>

@@ -6,7 +6,7 @@ const Header = () =>  {
     return(
         <>
             <div className="container mx-auto flex p-5 flex-col md:flex-row justify-center items-center">
-                <a className="flex lg:w-1/4 title-font font-normal items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <a className="flex lg:w-1/4 title-font font-normal items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0" href="https://github.com/satyawikananda/pokeact">
                     <img src={logo} alt="Logo" className="w-10 h-10 text-white bg-indigo-500 rounded-full"/>
                     <span className="ml-3 text-xl">Pokeact - Pokemon React</span>
                 </a>
